@@ -1,9 +1,9 @@
 import faker from "faker"
 import { FormEvent } from "react"
-import { useChat } from "../hooks/useChat"
+import { useChatMessages } from "../hooks/useChatMessages"
 
 export function Chat() {
-  const { messages, onNewMessage } = useChat()
+  const { messages, onNewMessage } = useChatMessages()
 
   function handleSendMessage(event: FormEvent) {
     event.preventDefault()

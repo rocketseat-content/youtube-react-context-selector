@@ -1,9 +1,9 @@
 import { PlusIcon } from "@heroicons/react/solid";
 import faker from 'faker';
-import { useChat } from "../hooks/useChat";
+import { useUserList } from "../hooks/useUserList";
 
 export function UserList() {
-  const { connected, onUserConnected } = useChat()
+  const { connected, onUserConnected } = useUserList()
 
   return (
     <section aria-labelledby="timeline-title" className="lg:col-start-3 lg:col-span-1">
